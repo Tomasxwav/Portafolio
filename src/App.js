@@ -2,6 +2,8 @@ import logo from './logo.svg';
 import './scss/app.scss';
 import photo from './img/Photo-min.webp';
 import CV from './img/CV.jpg'
+import Monitoreo from './proyects/Monitoreo.zip'
+import Wisar from './proyects/Wisar.zip'
 
 import { useEffect, useState } from 'react';
 import proyect1Img from './img/TRAINI.jpg';
@@ -149,7 +151,7 @@ function Card({imageUrl, nombre, descripcion, tecnologies, url}) {
   };
   return (
     // <div  className="proyects_card_container" style={divStyle}>
-      <a className="proyects_card" style={divStyle} href={url} target='_blank'>
+      <a className="proyects_card" style={divStyle} href={url} target='_blank' download={nombre+'.zip'}>
         <h2>
           {nombre}
         </h2>
@@ -200,8 +202,8 @@ function Proyects() {
       <h1> &lt; Proyectos /&gt; </h1>
       <div className="proyects_content">
         <Card imageUrl={proyect1Img} nombre={proyecto1} descripcion={descripcion1} tecnologies={tecnologies1} url='https://tomasxwav.pythonanywhere.com/'/>
-        <Card imageUrl={proyect2Img}nombre={proyecto2} descripcion={descripcion2} tecnologies={tecnologies2}/>
-        <Card imageUrl={proyect3Img}nombre={proyecto3} descripcion={descripcion3} tecnologies={tecnologies3}/>
+        <Card imageUrl={proyect2Img}nombre={proyecto2} descripcion={descripcion2} tecnologies={tecnologies2} url={Wisar}/>
+        <Card imageUrl={proyect3Img}nombre={proyecto3} descripcion={descripcion3} tecnologies={tecnologies3} url={Monitoreo}/>
       </div>
     </section>
   </>
