@@ -18,6 +18,8 @@ import npmImg from './svg/npm.svg'
 import gitImg from './svg/git.svg'
 import githubImg from './svg/github.svg'
 import vsImg from './svg/vs.svg'
+import arduinoImg from './svg/arduino.svg'
+import raspberryImg from './svg/raspberrypi.svg'
 
 import wppImg from './svg/whatsapp.svg'
 import outlookImg from './svg/outlook.svg'
@@ -45,6 +47,8 @@ let githubObj = new ProyectsImg("github", githubImg);
 let wppObj = new ProyectsImg('Whatsapp', wppImg)
 let outlookObj = new ProyectsImg('Outlook', outlookImg)
 let vsObj = new ProyectsImg('Visual Studio', vsImg)
+let arduinoObj = new ProyectsImg('Visual Studio', arduinoImg)
+let raspberryObj = new ProyectsImg('Visual Studio', raspberryImg)
 
 const technologies = {
     java: javaObj,
@@ -64,6 +68,8 @@ const technologies = {
     github: githubObj,
     firebase: firebaseObj,
     vs: vsObj,
+    arduino: arduinoObj,
+    raspberry: raspberryObj,
 
     wpp: wppObj,
     outlook: outlookObj

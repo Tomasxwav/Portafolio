@@ -4,11 +4,13 @@ import photo from './img/Photo-min.webp';
 import CV from './img/CV.jpg'
 import Monitoreo from './proyects/Monitoreo.zip'
 import Wisar from './proyects/Wisar.zip'
+import CajaDeHerramientas from './proyects/CajaDeHerramientas.zip'
 
 import { useEffect, useState } from 'react';
 import proyect1Img from './img/TRAINI.jpg';
 import proyect2Img from './img/WISAR.jpg';
 import proyect3Img from './img/Monitoreo.jpg';
+import proyect4Img from './img/CajaDeHerramientas.jpg';
 
 import technologies from './svg.js'
 
@@ -182,6 +184,8 @@ function Proyects() {
   const flask = <img src={technologies.flask.img} width='30'/>;
   const npm = <img src={technologies.npm.img} width='30'/>;
   const vs = <img src={technologies.vs.img} width='30'/>;
+  const arduino = <img src={technologies.arduino.img} width='30'/>;
+  const raspberry = <img src={technologies.raspberry.img} width='30'/>;
 
 
   const proyecto1 = "Traini";
@@ -195,6 +199,10 @@ function Proyects() {
   const proyecto3 = "Sistema distribuido de monitoreo dinámico";
   const descripcion3 = "Este sistema utiliza sockets en java con el fin de crear un servidor al cual varios clientes en la red puedan conectarse y asi enviar datos del hardware constantemente para monitorear estos equipos desde un equipo central";
   const tecnologies3 = [java]
+
+  const proyecto4 = "Caja de herramientas inteligente";
+  const descripcion4 = "Este proyecto consiste en una caja de herramientas que mediante tecnologia RFID detecta que herramientas estan dentro de la caja y las muestra en un display";
+  const tecnologies4 = [arduino, raspberry, python]
   
   return (
     <>
@@ -204,6 +212,7 @@ function Proyects() {
         <Card imageUrl={proyect1Img} nombre={proyecto1} descripcion={descripcion1} tecnologies={tecnologies1} url='https://tomasxwav.pythonanywhere.com/'/>
         <Card imageUrl={proyect2Img}nombre={proyecto2} descripcion={descripcion2} tecnologies={tecnologies2} url={Wisar}/>
         <Card imageUrl={proyect3Img}nombre={proyecto3} descripcion={descripcion3} tecnologies={tecnologies3} url={Monitoreo}/>
+        <Card imageUrl={proyect4Img}nombre={proyecto4} descripcion={descripcion4} tecnologies={tecnologies4} url={CajaDeHerramientas}/>
       </div>
     </section>
   </>
