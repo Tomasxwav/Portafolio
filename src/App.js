@@ -189,8 +189,8 @@ function Proyects() {
 
 
   const proyecto1 = "Traini";
-  const descripcion1 = "Esta es una plataforma para subir tutoriales de recetas para una panadería, con el fin de llevar el proceso de capacitacion de manera mas eficiente";
-  const tecnologies1 = [html, css, scss, python, flask, firebase]
+  const descripcion1 = "Esta es una plataforma para subir tutoriales de recetas para una panadería, con el fin de llevar el proceso de capacitacion de manera mas eficiente (Usa prueba@prueba.com pwd:12345678)";
+  const tecnologies1 = [html, css, scss, python, firebase, flask]
   
   const proyecto2 = "WISAR";
   const descripcion2 = "Esta fue un sistema de inventario de una empresa de ventas de productos medicos, la cual muestra la cantidad de productos en stock, vendidos y genera reportes ";
