@@ -55,10 +55,10 @@ function NavBar() {
             <p style={{color: '#00B6D6'}}>Mi</p><p>Portafolio</p>
           </div>
           <div className="navbar_links">
-            <a href='#header'> &lt; Inicio /&gt; </a>
-            <a href='#about'> &lt; Sobre mi /&gt; </a>
-            <a href='#proyects'> &lt; Proyectos /&gt; </a>
-            <a href='#contact'> &lt; Contacto /&gt; </a>
+            <a href='#header'>  Inicio  </a>
+            <a href='#about'>  Sobre mi  </a>
+            <a href='#proyects'>  Proyectos  </a>
+            <a href='#contact'>  Contacto  </a>
           </div>
           <div className="navbar_sidebar">
             <a id='menuBtn'> 
@@ -71,10 +71,10 @@ function NavBar() {
       </nav>
 
       <section className="sidebar">
-          <a href='#header'> &lt; Inicio /&gt; </a>
-          <a href='#about'> &lt; Sobre mi /&gt; </a>
-          <a href='#proyects'> &lt; Proyectos /&gt; </a>
-          <a href='#contact'> &lt; Contacto /&gt; </a>
+          <a href='#header'>  Inicio  </a>
+          <a href='#about'>  Sobre mi  </a>
+          <a href='#proyects'>  Proyectos  </a>
+          <a href='#contact'>  Contacto  </a>
       </section>
     </>
   );
@@ -133,7 +133,7 @@ function Header() {
 function AboutMe() {
   return (
     <section id='about' className="about">
-      <h1> &lt; Sobre mi /&gt; </h1>
+      <h1>  Sobre mi  </h1>
       <div className="about_content">
         <div className="about_card">
           <p>
@@ -207,7 +207,7 @@ function Proyects() {
   return (
     <>
     <section id='proyects' className='proyects'>
-      <h1> &lt; Proyectos /&gt; </h1>
+      <h1>  Proyectos  </h1>
       <div className="proyects_content">
         <Card imageUrl={proyect1Img} nombre={proyecto1} descripcion={descripcion1} tecnologies={tecnologies1} url='https://tomasxwav.pythonanywhere.com/'/>
         <Card imageUrl={proyect2Img}nombre={proyecto2} descripcion={descripcion2} tecnologies={tecnologies2} url={Wisar}/>
@@ -260,7 +260,7 @@ function Knwoledge() {
     <>
     
     <section className="knowledge">
-      <h1>&lt; Mis Conocimientos /&gt;</h1>
+      <h1> Mis Conocimientos </h1>
       <div className="knowledge_content">
         <KnowledgeCard cardname="Front-end" cardcontent={frontendItems}/>
         <KnowledgeCard cardname="Back-end" cardcontent={backendItems}/>
@@ -277,7 +277,7 @@ function Contact() {
   return (
     <>
       <section id='contact' className='contact'>
-        <h1>&lt; Contacto /&gt;</h1>
+        <h1> Contacto </h1>
         <div className="contact-content">
           <div className="wpp">
             <h2>Whatsapp</h2>
