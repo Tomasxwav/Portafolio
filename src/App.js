@@ -12,6 +12,7 @@ import proyect2Img from './img/WISAR.jpg';
 import proyect3Img from './img/Monitoreo.jpg';
 import proyect4Img from './img/CajaDeHerramientas.jpg';
 import proyect5Img from './img/TheNotebookProject.jpg';
+import proyect6Img from './img/Portafolio.png';
 
 import Icons from './svg/icons.js'
 
@@ -196,6 +197,10 @@ function Proyects() {
   const descripcion5 = "Consiste en una pagina web que me permite hacer mis notas sobre lo visto en mis clases de una manera ordenada, lo cual mejora mi proceso de aprendizaje en la universidad. (usa prueba@prueba.com - prueba123)";
   const tecnologies5 = ['html', 'css', 'node', 'react', 'firebase', 'figma' ]
   
+  const proyecto6 = "Portafolio V1";
+  const descripcion6 = "Es un proyecto donde de manera resumida doy a conocer mi perfil como desarrollador. Es la pagina actual, a la que le aplique mucho cariño y tiempo para mostrar un poco de mi, mis proyectos y habilidades.";
+  const tecnologies6 = ['html', 'css', 'scss', 'node', 'react' ]
+  
   return (
     <>
     <section id='proyects' className='proyects'>
@@ -206,6 +211,7 @@ function Proyects() {
         <Card imageUrl={proyect3Img}nombre={proyecto3} descripcion={descripcion3} tecnologies={tecnologies3} url={Monitoreo}/>
         <Card imageUrl={proyect4Img}nombre={proyecto4} descripcion={descripcion4} tecnologies={tecnologies4} url={CajaDeHerramientas}/>
         <Card imageUrl={proyect5Img}nombre={proyecto5} descripcion={descripcion5} tecnologies={tecnologies5} url="https://the-notebook-project.vercel.app/"/>
+        <Card imageUrl={proyect6Img}nombre={proyecto6} descripcion={descripcion6} tecnologies={tecnologies6} url="https://tomas-dev.surge.sh/"/>
         
       </div>
       
@@ -215,8 +221,6 @@ function Proyects() {
 }
 
 function KnowledgeCard({cardname, cardcontent}) {
-
-
   return (
     <div className="knowledge_card">
       <h2>{cardname}</h2>
