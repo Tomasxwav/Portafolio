@@ -120,14 +120,25 @@ function Header() {
 }
 
 function AboutMe() {
+  const frontend = ['uanl', 'fime', 'monterrey', 'photoshop', 'programacion'];
+
+
+  const frontendItems = frontend.map((technology, index) =>
+    <div className="technology">
+      <Icons key={index} icon={technology} width='48px'/>
+      <p>{technology}</p>
+    </div>)
   return (
     <section id='about' className="about">
       <h1>  Sobre mi  </h1>
       <div className="about_content">
         <div className="about_card">
           <p>
-          Soy una persona apasionada a la que gusta mucho el diseño y la programación, sin dejar de lado las ganas de aprender y mejorar. Busco seguir creciendo en mi vida profesional, aprendiendo de toda persona y compartiendo mis conocimientos con quien lo necesite. 
+          ¡Hola a todos! Soy Tomás Martínez, un joven estudiante apasionado por el <span>diseño y la programación</span>, sin dejar de lado las ganas de <span>aprender y mejorar.</span> </p>
+          <p> Actualmente estoy trabajando con proyectos personales y académicos, ya que estoy en mi <span>noveno semestre</span> de la <span>Ingenieria en Tecnologias de Software en la Universidad Autonoma de Nuevo Leon</span>.</p>
+          <p>Con 22 años de edad, busco seguir creciendo en mi vida profesional, aprendiendo de toda persona y compartiendo mis conocimientos con quien lo necesite.
           </p>
+      {/* <KnowledgeCard cardname="" cardcontent={frontendItems}/> */}
         </div>
       </div>
     </section>

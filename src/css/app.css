@@ -133,25 +133,27 @@ h1 {
 .about {
   padding: 2rem 0;
   border-bottom: solid 2px #00B6D6;
+  height: 10rem;
 }
 .about .about_content {
+  
   margin-top: 2rem;
 }
 .about .about_card {
+  
   border: solid 2px #00B6D6;
   border-radius: 0.4rem;
   padding: 1rem;
   height: auto;
   background-color: linear-gradient(rgba(0, 0, 0, 0), #001838, #001838);
+  
 }
 @media screen and (max-width: 767px) {
   .about .about_card p {
     min-width: 100%;
   }
 }
-.about .about_card p {
-  width: 80%;
-}
+
 
 .proyects {
   margin-top: 2rem;
