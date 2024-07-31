@@ -313,12 +313,12 @@ function App() {
       <NavBar />
       <div className='stars'></div>
       <Header />
+        <div className='stars'></div>
       <main className="container">
         <AboutMe />
         <Knwoledge/>
         <Proyects />
         <Contact />
-        <div className='stars'></div>
       </main>
       <footer>
       
