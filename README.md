@@ -1,6 +1,6 @@
 # Mi portafolio con ReactJS
 
-This project was named [Mi Portafolio](https://github.com/Tomasxwav/Portafolio).
+This project was named [Mi Portafolio](https://tomas-dev.surge.sh/).
 
 ## Novedades
 
